@@ -1,6 +1,6 @@
-Spite2D — Real OpenGL 2D Acceleration Without the Usual Pain
+Spite2D - Real OpenGL 2D Acceleration Without the Usual Pain
 
-Spite2D is a lightweight, thread-safe 2D rendering library built in Java that gives you actual hardware-accelerated OpenGL rendering — without forcing you to wrestle with complex OpenGL wrappers, shader setups, or endless boilerplate.
+Spite2D is a lightweight, thread-safe 2D rendering library built in Java that gives you actual hardware-accelerated OpenGL rendering - without forcing you to wrestle with complex OpenGL wrappers, shader setups, or endless boilerplate.
 
 Why Spite2D?
 
@@ -16,21 +16,21 @@ Thread safety issues causing crashes or corrupted frames
 
 Boilerplate code that swallows your productivity whole
 
-Spite2D is my answer to that madness. It delivers true GPU-accelerated 2D rendering but with a clean, simple API inspired by Java’s Graphics2D — no black-box engines, no confusing wrappers, just real OpenGL power made accessible.
+Spite2D is my answer to that madness. It delivers true GPU-accelerated 2D rendering but with a clean, simple API inspired by Java’s Graphics2D - no black-box engines, no confusing wrappers, just real OpenGL power made accessible.
 
 It’s also a big middle finger to the bloated, overcomplicated nonsense that is Unity, Godot, Unreal, and similar “engines” that come with 100 GB installs, mystery bugs, and magic black boxes that break your project for no reason.
 
 My Journey: The Three Engines and Their Games
 
-Before Spite2D existed, I poured years into building three custom game engines — each teaching me valuable lessons through frustration and failure.
+Before Spite2D existed, I poured years into building three custom game engines - each teaching me valuable lessons through frustration and failure.
 
 The first was Tomato, my initial top-down 2D engine built in Java Swing. It was rough, slow, and barely usable, but it laid the groundwork for everything that followed. Its lack of proper FPS control, inconsistent timing, and clunky input handling made it fragile and hard to maintain.
 
 Next came Potato, a ground-up rewrite focused on a raycasting retro FPS inspired by Wolfenstein 3D. I aimed for fast, brutal gameplay, but the engine hit a hard ceiling at around 120 FPS. Being tied to the UI thread, the rendering stuttered and lagged, and the lack of multithreading caused performance to tank under any complexity.
 
-Finally, Potato-Rewrite was my attempt to start fresh with better modularity, threading, and rendering control — but this time built with Java2D instead of OpenGL. While it simplified some aspects, it still suffered from Swing and Java2D’s repaint quirks and performance limits.
+Finally, Potato-Rewrite was my attempt to start fresh with better modularity, threading, and rendering control - but this time built with Java2D instead of OpenGL. While it simplified some aspects, it still suffered from Swing and Java2D’s repaint quirks and performance limits.
 
-Alongside these engines, I developed three games, each pushing the limits of their respective engines — learning firsthand where they failed and why I needed something better.
+Alongside these engines, I developed three games, each pushing the limits of their respective engines - learning firsthand where they failed and why I needed something better.
 
 How Spite2D Fixes It
 
@@ -44,7 +44,7 @@ It exposes a clean, Graphics2D-inspired API that feels familiar but actually wor
 
 Texture caching and affine transforms come built-in, so you don’t have to manage textures or matrices manually.
 
-You get manual render loop control — no more fighting Swing’s repaint quirks.
+You get manual render loop control - no more fighting Swing’s repaint quirks.
 
 All the native JOGL libraries and platform binaries for Windows, macOS, and Linux are bundled inside the final JAR, so setup is painless (Android is not supported because that platform is a different beast).
 
@@ -90,7 +90,7 @@ Anyone wanting full control over the render loop without black-box magic
 
 Limitations
 
-No 3D support — strictly 2D focused
+No 3D support - strictly 2D focused
 
 Text rendering is done by rasterizing fonts to textures, so it’s not as fast as native text rendering but keeps things simple
 
@@ -100,7 +100,7 @@ No Android or mobile support at this time
 
 License
 
-Spite2D is released under the WTFPL — use it however the hell you want. No strings attached.
+Spite2D is released under the WTFPL - use it however the hell you want. No strings attached.
 
 Final Thoughts
 
